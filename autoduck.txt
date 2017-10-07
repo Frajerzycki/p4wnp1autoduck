@@ -1,0 +1,10 @@
+USB_VID="0x1d6b"
+USB_PID="0x110c"
+USE_RNDIS=true
+USE_HID=true
+HID_KEYBOARD_TEST=true
+lang="us"
+function onKeyboardUp()
+{
+        cat $wdir/DuckyScripts/yourduckyscriptname.duck | duckhid
+}
